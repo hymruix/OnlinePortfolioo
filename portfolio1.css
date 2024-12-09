@@ -1,0 +1,112 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1127;
+    color: #333;
+    margin: 0;
+}
+
+ 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 10%;
+    background: rgba(194, 170, 170, 0.705);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;  
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #7b2c97;
+    text-shadow: 0 0 25px #7b2c97, 0 0 50px #7b2c97;
+    transform: scale(1.1); 
+}
+
+span {
+    color: purple;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease; 
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #7b2c97;
+    border-bottom: 3px solid #7b2c97; 
+    text-shadow: 0 0 25px  #7b2c97, 0 0 50px #7b2c97
+    transform  scale(1.1); 
+}
+
+ 
+.content {
+    padding-top: 150px;  
+}
+
+ 
+.resume-preview {
+    width: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.resume-preview img {
+    width: 100%;
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+}
+
+.resume-preview:hover img {
+    filter: blur(3px);
+}
+ 
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3a1b45;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: purple;
+    transform: scale(1.1);
+    text-shadow: 0 0 25px #3a1b45, 0 0 50px purple;
+}
